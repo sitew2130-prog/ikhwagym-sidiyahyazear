@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>fitness soufiane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+   <header class="navbar">
+    <div class="logo">
+        <span class="icon">AL</span> IKHWA
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav id="mainNav">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">A propos de nous</a>
+        <a href="servise.html">Services</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="contact.html" class="btn-support">Contact</a>
+    </nav>
+</header>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+
+
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div data-aos="fade-up" class="container">
+            <h2 class="section-title"><b>Portefeuille</b></h2>  
+            <div class="portfolio-filters">
+                <button data-aos="fade-up" class="filter-btn active" data-filter="all">Tout le matériel</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="branding">Musculation</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="photoshop">Fitness</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="web">Cardio</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="wordpress">Functional Training</button>
+            </div>
+
+            <div data-aos="fade-up" class="portfolio-grid">
+                <div class="portfolio-item branding">
+                    <img src="images/bench.png" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Chest press</h3>
+                        <p>Musculation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item photoshop">
+                    <img src="images/ktaf.png" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Shoulder press</h3>
+                        <p>Fitness</p>
+                    </div>
+                </div>
+                <div class="portfolio-item web">
+                    <img src="images/tapinn.png" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Tapis de course</h3>
+                        <p>Cardio</p>
+                    </div>
+                </div>
+                <div class="portfolio-item web">
+                    <img src="images/dakhela.png" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Machine de course</h3>
+                        <p>Cardio</p>
+                    </div>
+                </div>
+                <div class="portfolio-item photoshop">
+                    <img src="images/bbb.png" alt="Project 5">
+                    <div class="overlay">
+                        <h3>Bench Press</h3>
+                        <p>Fitness</p>
+                    </div>
+                </div>
+                <div class="portfolio-item branding">
+                    <img src="images/legpress.png" alt="Project 6">
+                    <div class="overlay">
+                        <h3>Goblet squat</h3>
+                        <p>Musculation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item wordpress">
+                    <img src="images/lesalther.png" alt="Project 7">
+                    <div class="overlay">
+                        <h3>Biceps curls</h3>
+                        <p>Functional Training</p>
+                    </div>
+                </div>
+                <div class="portfolio-item wordpress">
+                    <img src="images/haltere.png" alt="Project 8">
+                    <div class="overlay">
+                        <h3>Triceps extensions</h3>
+                        <p>Functional Training</p>
+                    </div>
+                </div>
+            </div> <!-- اغلاق portfolio-grid -->
+        </div>
+    </section>
+    <script>
+  // نجيب كل الأزرار وكل المشاريع
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // نحيد active من كل الأزرار ونعطيه غير للزر لي تضغط عليه
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      portfolioItems.forEach(item => {
+        if (filter === 'all') {
+          item.classList.remove('hide'); // نوري كل المشاريع
+        } else {
+          if (item.classList.contains(filter)) {
+            item.classList.remove('hide'); // نوري المشاريع ديال الفئة
+          } else {
+            item.classList.add('hide'); // نخفي المشاريع اللي ما كيتوافقوش
+          }
+        }
+      });
+    });
+  });
+</script>
+
+<footer class="footer">
+  <div class="footer-wrapper">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2 class="footer-logo">AL <span>IKHWA</span></h2>
+      <p>Salle de sport et bodybuilding à Sidi Yahya Zaer.<br> Style de vie sain et actif pour tous.</p>
+
+      <div class="footer-contact-stack">
+        <p><i class="fas fa-phone"></i> +212 696 476 340</p>
+        <p><i class="fas fa-envelope"></i> contact@alikwhagym.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sidi Yahya Zaer, Maroc</p>
+
+        <div class="footer-social">
+  <a href="https://www.facebook.com/soufiane.elyounssi" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/ikhwagym" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/212696476340" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="index.html">Accueil</a></li>
+        <li><i class="fas fa-user"></i><a href="apropos.html">À propos</a></li>
+        <li><i class="fas fa-cogs"></i><a href="servise.html">Services</a></li>
+        <li><i class="fas fa-briefcase"></i><a href="portfolio.html">Portfolio</a></li>
+        <li><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <h3>Notre localisation</h3>
+      <p>Sidi Yahya Zaer, Maroc</p>
+      <iframe
+        src="https://www.google.com/maps?q=Sidi+Yahya+Zaer+Maroc&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 AL IKHWA. Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

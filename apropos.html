@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>fitness soufiane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+        <span class="icon">AL</span> IKHWA
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav id="mainNav">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">A propos de nous</a>
+        <a href="servise.html">Services</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="contact.html" class="btn-support">Contact</a>
+    </nav>
+</header>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+
+    
+<section class="about" id="about">
+  <div class="container">
+    <h1>À propos de nous</h1>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+        <img src="images/dakhela.png" alt="">
+        <div class="overlay">
+          <h2>Notre Mission</h2>
+          <p>Fournir un environnement motivant et sûr pour tous.</p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="">
+        <div class="overlay">
+          <h2>Nos Coachs</h2>
+          <p>Des coachs qualifiés avec programmes personnalisés.</p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="images/CD.png" alt="">
+        <div class="overlay">
+          <h2>Notre Gym</h2>
+          <p>Salle moderne, ambiance conviviale et pro.</p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="images/CD2.png" alt="">
+        <div class="overlay">
+          <h2>Nos Valeurs</h2>
+          <p>Engagement, discipline et respect.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Video Section -->
+  <div class="container">
+    <div class="video-text">
+      <video src="images/lasale.mp4" autoplay muted loop></video>
+      <div class="text">
+        <h2><i class="fa-solid fa-video"></i> Découvrez notre initiative</h2>
+        <p>
+          Voici un petit texte explicatif qui décrit la vidéo et met en avant
+          votre projet ou service.
+        </p>
+        <a href="https://instagram.com/ikhwagym" target="_blank" class="insta-icon">
+          <i class="fab fa-instagram"></i> Suivez-nous sur Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer-wrapper">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2 class="footer-logo">AL <span>IKHWA</span></h2>
+      <p>Salle de sport et bodybuilding à Sidi Yahya Zaer.<br> Style de vie sain et actif pour tous.</p>
+
+      <div class="footer-contact-stack">
+        <p><i class="fas fa-phone"></i> +212 696 476 340</p>
+        <p><i class="fas fa-envelope"></i> contact@alikwhagym.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sidi Yahya Zaer, Maroc</p>
+
+        <div class="footer-social">
+  <a href="https://www.facebook.com/soufiane.elyounssi" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/ikhwagym" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/212696476340" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="index.html">Accueil</a></li>
+        <li><i class="fas fa-user"></i><a href="apropos.html">À propos</a></li>
+        <li><i class="fas fa-cogs"></i><a href="servise.html">Services</a></li>
+        <li><i class="fas fa-briefcase"></i><a href="portfolio.html">Portfolio</a></li>
+        <li><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <h3>Notre localisation</h3>
+      <p>Sidi Yahya Zaer, Maroc</p>
+      <iframe
+        src="https://www.google.com/maps?q=Sidi+Yahya+Zaer+Maroc&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 AL IKHWA. Tous droits réservés.</p>
+  </div>
+</footer>
+</body>
+</html>

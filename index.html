@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness soufiane</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   <header class="navbar">
+    <div class="logo">
+        <span class="icon">AL</span> IKHWA
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav id="mainNav">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">A propos de nous</a>
+        <a href="servise.html">Services</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="equipe.html">Equipe</a>
+        <a href="contact.html" class="btn-support">Contact</a>
+    </nav>
+</header>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("mainNav");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
+  <!-- زرار Scroll Up -->
+<button id="scroll-up" title="Haut">↑</button>
+
+<!-- زرار Scroll Down -->
+<button id="scroll-down" title="Bas">↓</button>
+
+<!-- ضع السكريبت في آخر الصفحة قبل </body> -->
+<script>
+  // تأكد بأن DOM جاهز
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const scrollUp = document.getElementById('scroll-up');
+    const scrollDown = document.getElementById('scroll-down');
+
+    // Scroll Up
+    scrollUp.addEventListener('click', () => {
+      window.scrollBy({ top: -100, behavior: 'smooth' });
+    });
+
+    // Scroll Down
+    scrollDown.addEventListener('click', () => {
+      window.scrollBy({ top: 100, behavior: 'smooth' });
+    });
+
+  });
+</script>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h1>
+                Association <span>AL IKHWA</span> <br>
+                & body building gym in <span>Sidi yahya zaer</span>
+            </h1>
+
+            <p>
+                Association sportive dédiée au bodybuilding et
+                 à la remise en forme, visant à promouvoir un mode
+                  de vie sain chez les jeunes, située à Sidi Yahya Zaer.
+            </p>
+
+            <div class="buttons">
+                <a href="apropos.html" class="btn-green">En savoir plus</a>
+                <a href="contact.html" class="btn-orange">Contactez-nous </a>
+            </div>
+        </div>
+    </section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h1>À propos de nous</h1>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+        <img src="images/dakhela.png" alt="">
+        <div class="overlay">
+          <h2>Notre Mission</h2>
+          <p>Fournir un environnement motivant et sûr pour tous.</p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="">
+        <div class="overlay">
+          <h2>Nos Coachs</h2>
+          <p>Des coachs qualifiés avec programmes personnalisés.</p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="images/CD.png" alt="">
+        <div class="overlay">
+          <h2>Notre Gym</h2>
+          <p>Salle moderne, ambiance conviviale et pro.</p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <img src="images/CD2.png" alt="">
+        <div class="overlay">
+          <h2>Nos Valeurs</h2>
+          <p>Engagement, discipline et respect.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Video Section -->
+  <div class="container">
+    <div class="video-text">
+      <video src="images/lasale.mp4" autoplay muted loop></video>
+      <div class="text">
+        <h2><i class="fa-solid fa-video"></i> Découvrez notre initiative</h2>
+        <p>
+          Voici un petit texte explicatif qui décrit la vidéo et met en avant
+          votre projet ou service.
+        </p>
+        <a href="https://instagram.com/ikhwagym" target="_blank" class="insta-icon">
+          <i class="fab fa-instagram"></i> Suivez-nous sur Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="services" id="services">
+    <div class="container">
+        <h2>Nos Services</h2>
+
+        <div class="services-grid">
+
+            <div class="service-item">
+                <i class="fa-solid fa-dumbbell"></i>
+                <h3>Entraînements Personnalisés</h3>
+                <p>Coaching individuel et programmes sur mesure selon vos objectifs.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <h3>Bodybuilding & Musculation</h3>
+                <p>Programmes structurés pour développer la force et la performance.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-users"></i>
+                <h3>Cours Collectifs</h3>
+                <p>Sessions en groupe dynamiques: HIIT, cardio, stretching.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-apple-alt"></i>
+                <h3>Suivi Nutritionnel</h3>
+                <p>Plans alimentaires professionnels pour optimiser vos résultats.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-calendar-alt"></i>
+                <h3>Ateliers & Événements</h3>
+                <p>Workshops thématiques et challenges sportifs réguliers.</p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-store"></i>
+                <h3>Vente d’Équipements</h3>
+                <p>Accessoires fitness et matériel sportif disponibles à l'achat.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="team">
+  <h2>Équipe</h2>
+
+  <div class="team-container">
+
+    <div class="team-card">
+      <div class="color-bar"></div>
+      <img src="images/coachs.png" alt="">
+      <h3>Soufiane</h3>
+      <p>Coach principal</p>
+      <div class="social">
+        <a href="https://www.facebook.com/share/1HgV5kk4BU/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/soufianeelyounssi"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="color-bar"></div>
+      <img src="images/ibrahim7.png" alt="">
+      <h3>Ibrahim</h3>
+      <p>Coach fitness</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/tchaka_brahim"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    
+
+    <div class="team-card">
+      <div class="color-bar"></div>
+      <img src="images/Capture.png" alt="">
+      <h3>Youssef</h3>
+      <p>Sportif</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    
+    
+
+    
+   
+    
+ 
+
+  </div>
+</section>
+
+
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div data-aos="fade-up" class="container">
+            <h2 class="section-title"><b>Portefeuille</b></h2>  
+            <div class="portfolio-filters">
+                <button data-aos="fade-up" class="filter-btn active" data-filter="all">Tout le matériel</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="branding">Musculation</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="photoshop">Fitness</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="web">Cardio</button>
+                <button data-aos="fade-up" class="filter-btn" data-filter="wordpress">Functional Training</button>
+            </div>
+
+            <div data-aos="fade-up" class="portfolio-grid">
+                <div class="portfolio-item branding">
+                    <img src="images/bench.png" alt="Project 1">
+                    <div class="overlay">
+                        <h3>Chest press</h3>
+                        <p>Musculation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item photoshop">
+                    <img src="images/ktaf.png" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Shoulder press</h3>
+                        <p>Fitness</p>
+                    </div>
+                </div>
+                <div class="portfolio-item web">
+                    <img src="images/tapinn.png" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Tapis de course</h3>
+                        <p>Cardio</p>
+                    </div>
+                </div>
+                <div class="portfolio-item web">
+                    <img src="images/dakhela.png" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Machine de course</h3>
+                        <p>Cardio</p>
+                    </div>
+                </div>
+                <div class="portfolio-item photoshop">
+                    <img src="images/bbb.png" alt="Project 5">
+                    <div class="overlay">
+                        <h3>Bench Press</h3>
+                        <p>Fitness</p>
+                    </div>
+                </div>
+                <div class="portfolio-item branding">
+                    <img src="images/legpress.png" alt="Project 6">
+                    <div class="overlay">
+                        <h3>Goblet squat</h3>
+                        <p>Musculation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item wordpress">
+                    <img src="images/lesalther.png" alt="Project 7">
+                    <div class="overlay">
+                        <h3>Biceps curls</h3>
+                        <p>Functional Training</p>
+                    </div>
+                </div>
+                <div class="portfolio-item wordpress">
+                    <img src="images/haltere.png" alt="Project 8">
+                    <div class="overlay">
+                        <h3>Triceps extensions</h3>
+                        <p>Functional Training</p>
+                    </div>
+                </div>
+            </div> <!-- اغلاق portfolio-grid -->
+        </div>
+    </section>
+    <script>
+  // نجيب كل الأزرار وكل المشاريع
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // نحيد active من كل الأزرار ونعطيه غير للزر لي تضغط عليه
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+
+      portfolioItems.forEach(item => {
+        if (filter === 'all') {
+          item.classList.remove('hide'); // نوري كل المشاريع
+        } else {
+          if (item.classList.contains(filter)) {
+            item.classList.remove('hide'); // نوري المشاريع ديال الفئة
+          } else {
+            item.classList.add('hide'); // نخفي المشاريع اللي ما كيتوافقوش
+          }
+        }
+      });
+    });
+  });
+</script>
+
+
+
+<section class="contact">
+    <h2>Contactez-nous</h2>
+
+    <p class="contact-text">
+      Bienvenue chez <b>Association AL IKHWA</b> 💪  
+      Notre équipe est à votre écoute pour répondre à toutes vos demandes.
+      Laissez-nous votre message et choisissez votre moyen de contact.
+    </p>
+
+    <textarea id="message" placeholder="Votre message..." rows="5"></textarea>
+
+    <div class="contact-icons">
+        <a href="#" onclick="sendWhatsApp()"><i class="fab fa-whatsapp"></i></a>
+
+        <a href="#" onclick="makeCall()"><i class="fas fa-phone"></i></a>
+
+    </div>
+  
+
+</section>
+
+<script>
+function getMessage() {
+  return document.getElementById("message").value.trim();
+}
+
+function sendWhatsApp() {
+  let msg = getMessage();
+  if (!msg) { alert("Veuillez écrire un message d'abord!"); return; }
+  let phone = "212696476340"; // رقمك واتساب
+  window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
+}
+
+
+function makeCall() {
+  let phone = "+212696476340"; // رقم المكالمة
+  window.location.href = `tel:${phone}`;
+}
+function openMap() {
+  // بدل الإحداثيات بموقعك الحقيقي
+  let lat = 33.5731;
+  let lng = -7.5898;
+  window.open(`https://www.google.com/maps?q=${lat},${lng}`, "_blank");
+}
+</script>
+
+<footer class="footer">
+  <div class="footer-wrapper">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h2 class="footer-logo">AL <span>IKHWA</span></h2>
+      <p>Salle de sport et bodybuilding à Sidi Yahya Zaer.<br> Style de vie sain et actif pour tous.</p>
+
+      <div class="footer-contact-stack">
+        <p><i class="fas fa-phone"></i> +212 696 476 340</p>
+        <p><i class="fas fa-envelope"></i> contact@alikwhagym.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Sidi Yahya Zaer, Maroc</p>
+
+        <div class="footer-social">
+  <a href="https://www.facebook.com/share/1HgV5kk4BU/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://www.instagram.com/ikhwagym" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://wa.me/212696476340" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <h3>Liens rapides</h3>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="index.html">Accueil</a></li>
+        <li><i class="fas fa-user"></i><a href="apropos.html">À propos</a></li>
+        <li><i class="fas fa-cogs"></i><a href="servise.html">Services</a></li>
+        <li><i class="fas fa-briefcase"></i><a href="portfolio.html">Portfolio</a></li>
+        <li><i class="fas fa-envelope"></i><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <h3>Notre localisation</h3>
+      <p>Sidi Yahya Zaer, Maroc</p>
+      <iframe
+        src="https://www.google.com/maps?q=Sidi+Yahya+Zaer+Maroc&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 AL IKHWA. Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
+</html>
